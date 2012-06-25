@@ -1,0 +1,2 @@
+This is just a simple project I made. I've just got one sprite with four defined movements (up, down, left, and right).
+For some odd reason, it doesn't seem to load the sprite for me. I'm not certain why.
