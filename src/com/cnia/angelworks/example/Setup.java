@@ -19,6 +19,17 @@ public class Setup extends StateBasedGame {
 		// TODO Auto-generated constructor stub
 	}
 	
+	/*
+	 * the initStatesList method is used to hold all your worlds together and has you put in a reference number for each world
+	 * so you can change through them accordingly.
+	 */
+	@Override
+	public void initStatesList(GameContainer gc) throws SlickException {
+		initResources();
+		addState(new Level(0, gc));
+
+	}
+	
 	public static void initResources() throws SlickException {
 		  if (resourcesInited)
 		   return;
@@ -32,17 +43,6 @@ public class Setup extends StateBasedGame {
 		 
 		  resourcesInited = true;
 		 }
-
-	/*
-	 * the initStatesList method is used to hold all your worlds together and has you put in a reference number for each world
-	 * so you can change through them accordingly.
-	 */
-	@Override
-	public void initStatesList(GameContainer gc) throws SlickException {
-		// TODO Auto-generated method stub
-		addState(new Level(0, gc));
-
-	}
 	
 	/*
 	 * Main method creates an instance of the AppGameContainer to help set up your game's parameters
